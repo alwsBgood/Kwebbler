@@ -1,0 +1,5 @@
+{
+  "name": "Kwebbler",
+  "description": "A developer-themed tool that automates and manages speaker order in daily standup meetings, designed with a modern terminal interface.",
+  "requestFramePermissions": []
+}

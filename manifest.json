@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Kwebbler Standup Manager",
+  "version": "1.0",
+  "description": "A terminal-style standup manager directly integrated into Google Meet.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["dist/index.js"],
+      "css": ["injected.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["dist/index.js"],
+      "matches": ["https://meet.google.com/*"]
+    }
+  ]
+}
